@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="books">
+    <h1>All Bookings</h1>
+        <table>
+            <tr>
+                <th class="bookid">Reservation ID</th>
+                <th class="bookname">Passenger Name</th>
+                <th class="Author">From</th>
+                <th class="isbn">To</th>
+                <th class="edition">Age</th>
+                <th class="delete">Train Name</th>
+                <th class="delete">Date</th>
+                <th class="delete">Seat</th>
+                
+            </tr>
+            <% for(Booking of Booking){ %>
+                <tr>
+                    <td class="column1">
+                     <%= Booking.id  %> 
+                    </td>
+                    <td class="column2">
+                        <%= Booking.name  %>  
+                    </td>
+                    <td class="column3">
+                        <%= Booking.from  %> 
+                    </td>
+                    <td class="column3">
+                        <%= Booking.to  %> 
+                    </td>
+                    <td class="column3">
+                        <%= Booking.age  %> 
+                    </td>
+                    <td class="column3">
+                        <%= Booking.Train  %> 
+                    </td>
+                    <td class="column3">
+                        <%= Booking.Date %> 
+                    </td>
+                    <td class="column3">
+                        <%= Booking.seat  %> 
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>
